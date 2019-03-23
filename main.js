@@ -128,11 +128,11 @@ commander
   .description('本工具可以将当前外网地址更新到dnspod的解析记录上')
   .option('-t, --token <value>', '输入dnspod的token,格式为id,token')
   .option('-d, --domain [value]', '输入需要解析的域名')
-  .option('-s, --sub-domain [value]', '输入需要解析的子域名')
+  .option('-s, --subdomain [value]', '输入需要解析的子域名')
   .action(() => {
     TOKEN = commander.token;
     DOMAIN = commander.domain;
-    SUB_DOMAIN = commander['sub-domain'];
+    SUB_DOMAIN = commander.subdomain;
     run().then(() => process.exit(0)).catch((e) => {
       console.error(e);
       process.exit(1);
