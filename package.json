@@ -1,0 +1,25 @@
+{
+  "name": "ddnspod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ddnspod": "./main.js"
+  },
+  "author": "jasonwx@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "commander": "^2.19.0",
+    "dotenv": "^7.0.0",
+    "qs": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
