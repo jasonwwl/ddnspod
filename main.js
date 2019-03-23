@@ -80,7 +80,7 @@ function getLocalIP() {
 
 function getCache() {
   try {
-    const content = fs.readFileSync(path.join(os.homedir(), '.ddnspod'));
+    const content = fs.readFileSync(path.join(os.homedir(), '.ddnspod')).toString();
     if (content) {
       return JSON.parse(connect);
     }
