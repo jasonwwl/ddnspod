@@ -82,7 +82,7 @@ function getCache() {
   try {
     const content = fs.readFileSync(path.join(os.homedir(), '.ddnspod')).toString();
     if (content) {
-      return JSON.parse(connect);
+      return JSON.parse(content);
     }
     return null;
   } catch (e) {
